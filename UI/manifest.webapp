@@ -1,0 +1,15 @@
+{
+    "name": "UI",
+    "description": "The classic study about UI's",
+    "launch_path": "/index.html",
+    "icons": {
+        "60": "/img/logo60.png",
+        "128": "/img/logo128.png"
+    },
+    "developer": {
+        "name": "Carlos E. Caballero B.",
+        "url": "https://github.com/ccaballero"
+    },
+    "default_locale": "en"
+}
+
