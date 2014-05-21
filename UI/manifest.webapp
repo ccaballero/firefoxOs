@@ -1,5 +1,6 @@
 {
     "name": "UI",
+    "type": "privileged",
     "description": "The classic study about UI's",
     "launch_path": "/index.html",
     "icons": {
@@ -10,6 +11,12 @@
         "name": "Carlos E. Caballero B.",
         "url": "https://github.com/ccaballero"
     },
-    "default_locale": "en"
+    "default_locale": "en",
+    "permissions": {
+        "audio-channel-content": {},
+        "device-storage:music": {
+            "access": "readcreate"
+        }
+    }
 }
 

@@ -1,29 +1,55 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
         <title>UI</title>
-        <link href="/style/tabs.css" rel="stylesheet" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/style/default.css" />
+        <link rel="stylesheet" href="/style/lists.css" />
+        <link rel="stylesheet" href="/style/toolbars.css" />
+        <link rel="stylesheet" href="/icons/styles/media_icons.css" />
+        <script src="/js/holder.js"></script>
+        <script src="/js/ui.js"></script>
     </head>
     <body>
-        <ul role="tablist" class="bb-tablist">
-            <li id="panel1" role="presentation">
-                <a id="tab1" href="#panel1" class="icon" role="tab" aria-controls="tabpanel1">comms</a>
-                <div id="tabpanel1" class="bb-tabpanel" role="tabpanel" aria-labelledby="tab1">Tab Panel 1</div>
-            </li>
-            <li id="panel2" role="presentation">
-                <a id="tab2" href="#panel2" class="icon" role="tab" aria-controls="tabpanel2">contacts</a>
-                <div id="tabpanel2" class="bb-tabpanel" role="tabpanel" aria-labelledby="tab2">Tab Panel 2</div>
-            </li>
-            <li id="panel3" role="presentation" aria-disabled="true">
-                <a id="tab3" class="icon" role="tab" aria-controls="tabpanel3">dialer</a>
-                <div id="tabpanel3" class="bb-tabpanel" role="tabpanel" aria-labelledby="tab3">Tab Panel 3</div>
-            </li>
-            <li id="panel4" role="presentation">
-                <a id="tab4" href="#panel4" role="tab" aria-controls="tabpanel4">Tab name</a>
-                <div id="tabpanel4" class="bb-tabpanel" role="tabpanel" aria-labelledby="tab4">Tab Panel 4</div>
-            </li>
-        </ul>
+        <section data-type="list">
+            <header>Canciones</header>
+            <ul>
+                <li>
+                    <aside class="pack-end">
+                        <img data-src="/style/holder.js/60x60" />
+                    </aside>
+                    <a href="#">
+                        <p>Modest Mouse</p>
+                        <p>Float on</p>
+                    </a>
+                </li>
+                <li>
+                    <aside class="pack-end">
+                        <img data-src="/style/holder.js/60x60" />
+                    </aside>
+                    <a href="#">
+                        <p>Modest Mouse</p>
+                        <p>Fly trapped in a jar</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <audio id="player">
+                <source src="/a.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+        <section role="toolbar">
+            <ul>
+                <li><button id="previous"
+                            class="media-icon media-previous">Previous</button></li>
+                <li><button id="play"
+                            class="media-icon media-play">Play</button></li>
+                <li><button id="pause"
+                            class="media-icon media-pause">Pause</button></li>
+            </ul>
+        </section>
     </body>
 </html>
 
